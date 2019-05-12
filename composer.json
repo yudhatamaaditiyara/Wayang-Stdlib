@@ -1,0 +1,14 @@
+{
+    "name": "wayang/stdlib",
+    "description": "The Wayang Stdlib",
+    "type": "library",
+    "license": "Apache-2.0",
+    "require": {
+    	"php": "^7.1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wayang\\Stdlib\\": "src/Wayang/Stdlib/"
+        }
+    }
+}
