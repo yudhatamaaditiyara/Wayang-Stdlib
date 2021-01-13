@@ -5,7 +5,5 @@
  */
 namespace Wayang\Stdlib;
 
-use Throwable;
-
-interface ThrowableInterface extends Throwable
+interface ThrowableInterface extends \Throwable
 {}

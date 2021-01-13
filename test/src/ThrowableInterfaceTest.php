@@ -5,7 +5,6 @@
  */
 namespace Wayang\Stdlib;
 
-use Throwable;
 use ReflectionClass;
 use PHPUnit\Framework\TestCase;
 
@@ -18,6 +17,6 @@ class ThrowableInterfaceTest extends TestCase
 
   public function testMustBeSubclassOfThrowable(){
     $rc = new ReflectionClass(ThrowableInterface::class);
-    $this->assertTrue($rc->isSubclassOf(Throwable::class));
+    $this->assertTrue($rc->isSubclassOf(\Throwable::class));
   }
 }
