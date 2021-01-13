@@ -5,5 +5,8 @@
  */
 namespace Wayang\Stdlib;
 
-interface StringableInterface
-{}
+if (PHP_VERSION_ID >= 80000) {
+  interface StringableInterface extends \Stringable{}
+} else {
+  interface StringableInterface{}
+}

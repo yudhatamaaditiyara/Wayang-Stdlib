@@ -14,4 +14,13 @@ class StringableInterfaceTest extends TestCase
     $rc = new ReflectionClass(StringableInterface::class);
     $this->assertTrue($rc->isInterface());
   }
+
+  public function testMustBeSubclassOfStringable(){
+    $rc = new ReflectionClass(StringableInterface::class);
+    if (PHP_VERSION_ID >= 80000) {
+      $this->assertTrue($rc->isSubclassOf(\Stringable::class));
+    } else {
+      $this->assertTrue(true);
+    }
+  }
 }
