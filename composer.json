@@ -14,6 +14,11 @@
       "Wayang\\Stdlib\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "WayangTest\\Stdlib\\": "test/src/"
+    }
+  },
   "scripts": {
     "test": "phpunit -c test/phpunit.config.xml",
     "coverage": "phpunit --coverage-text --coverage-clover=build/coverage/coverage-clover.xml -c test/phpunit.config.xml"

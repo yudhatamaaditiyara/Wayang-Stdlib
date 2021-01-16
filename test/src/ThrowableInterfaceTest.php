@@ -3,10 +3,11 @@
  * Copyright 2019 Yudha Tama Aditiyara
  * SPDX-License-Identifier: Apache-2.0
  */
-namespace Wayang\Stdlib;
+namespace WayangTest\Stdlib;
 
 use ReflectionClass;
 use PHPUnit\Framework\TestCase;
+use Wayang\Stdlib\ThrowableInterface;
 
 class ThrowableInterfaceTest extends TestCase
 {
